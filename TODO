@@ -1,0 +1,10 @@
+WORLD GEN
+Idea 1:	Points
+	Randomly generate an exit at coordinates (x, y) that is a certain distance away from the player spawn (within reason)
+	Randomly generate n nodes around the world within a certain distance of the player spawn and the exit
+	Randomly connect points together with a path and assign the path a random weight; n paths max for each node; all paths must be connected
+	Create a min spanning tree from the nodes
+	Following the min spanning tree we generate, calculate the paths between each node in the world (this will probably be diagonal geometrically)
+	Following each path between nodes, generate rooms and hallways that are only vertical or horizontal until we connect the nodes
+	Do this for each node?
+	
